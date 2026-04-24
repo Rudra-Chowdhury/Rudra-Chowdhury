@@ -1,5 +1,4 @@
-![logo](<img width="1527" height="472" alt="17770086573873012132992627324287" src="https://github.com/user-attachments/assets/47ffc1e7-c7b3-40a4-bf45-d3484c315990" />
-)
+![logo](IMG_20260305_203134.png)
 
 
 
