@@ -72,29 +72,16 @@ JSON         11 mins         ▓░░░░░░░░░░░░░░░░
 
 
 
-## 🚀My n8n Workflow Architecture
+## 🧠 My Learning Workflow (Mermaid)
 
 ```mermaid
 graph TD
+    A[💡 New Idea] --> B[📘 Research / Learn Concept]
+    B --> C[✍️ Write Code / Pseudo Code]
+    C --> D[🐞 Debug & Test]
+    D --> E{✅ Works?}
+    E -->|Yes| F[🚀 Deploy / Share]
+    E -->|No| C
+    F --> G[📈 Improve & Iterate]
+    G --> A
 
-    A[WhatsApp User] -->|Sends Message| B[WhatsApp Cloud API Webhook]
-
-    B --> C[n8n Webhook Trigger]
-
-    C --> D[Router Node]
-    D -->|New User| E[Create User in Database]
-    D -->|Existing User| F[Fetch User Profile]
-
-    D -->|Command Based| G[Command Handler]
-    D -->|Normal Text| H[AI Reply Generator]
-
-    G --> I[Generate Template Reply]
-    H --> I
-
-    I --> J[Send WhatsApp Message via API]
-
-    J --> K[Log Message to DB/Sheet]
-    K --> L[Analytics Dashboard]
-```
-
----
